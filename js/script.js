@@ -11,20 +11,20 @@ console.log('JS OK!');
 
 // 1. Creo una variabile di appoggio
 let result = '';
+const numbers = document.getElementById('list-items');
 // 2.Stampo i numeri da 1 a 100
 for (let i = 1; i <= 100; i++) {
 
     if (i % 15 === 0) { // Numeri multipli di 3 e di 5
-        result += ' FizzBuzz';
+        result += '<li> FizzBuzz </li>';
     } else if (i % 3 === 0) { // Numeri multipli solo di 3
-        result += ' Fizz';
+        result += '<li> Fizz </li>';
     } else if (i % 5 === 0) { // Numeeri multipli solo di 5
-        result += ' Buzz';
+        result += '<li> Buzz </li>';
     } else {
-        result += ` ${i} `;
+        result += `<li> ${i} </li>`;
     }
+    // Stampo il risultato in pagina\
+    numbers.innerHTML = `<li> ${result} </li> `;
 }
 console.log(result);
-// Stampo il risultato in pagina
-const numbers = document.getElementById('list-items');
-numbers.innerHTML = `<li> ${result} </li> `;
