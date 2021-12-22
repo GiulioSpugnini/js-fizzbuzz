@@ -15,13 +15,13 @@ let result = '';
 for (let i = 1; i <= 100; i++) {
 
     if (i % 15 === 0) { // Numeri multipli di 3 e di 5
-        result += 'FizzBuzz';
+        result += ' FizzBuzz';
     } else if (i % 3 === 0) { // Numeri multipli solo di 3
-        result += 'Fizz';
+        result += ' Fizz';
     } else if (i % 5 === 0) { // Numeeri multipli solo di 5
-        result += 'Buzz';
+        result += ' Buzz';
     } else {
-        result += i;
+        result += ` ${i} `;
     }
 }
 console.log(result);
