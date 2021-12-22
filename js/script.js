@@ -25,6 +25,6 @@ for (let i = 1; i <= 100; i++) {
         result += `<li> ${i} </li>`;
     }
     // Stampo il risultato in pagina\
-    numbers.innerHTML = `<li> ${result} </li> `;
 }
+numbers.innerHTML = result;
 console.log(result);
