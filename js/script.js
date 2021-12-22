@@ -13,10 +13,13 @@ console.log('JS OK!');
 let result = '';
 // 2.Stampo i numeri da 1 a 100
 for (let i = 1; i <= 100; i++) {
-    if (i % 3 === 0) {
-        result += 'fizz';
-    } else if (i % 5 === 0) {
-        result += 'buzz';
+
+    if (i % 15 === 0) { // Numeri multipli di 3 e di 5
+        result += 'FizzBuzz';
+    } else if (i % 3 === 0) { // Numeri multipli solo di 3
+        result += 'Fizz';
+    } else if (i % 5 === 0) { // Numeeri multipli solo di 5
+        result += 'Buzz';
     } else {
         result += i;
     }
