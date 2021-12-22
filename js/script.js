@@ -13,6 +13,12 @@ console.log('JS OK!');
 let result = '';
 // 2.Stampo i numeri da 1 a 100
 for (let i = 1; i <= 100; i++) {
-    result += i;
+    if (i % 3 === 0) {
+        result += 'fizz';
+    } else if (i % 5 === 0) {
+        result += 'buzz';
+    } else {
+        result += i;
+    }
 }
 console.log(result);
