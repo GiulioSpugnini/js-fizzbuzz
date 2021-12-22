@@ -25,3 +25,6 @@ for (let i = 1; i <= 100; i++) {
     }
 }
 console.log(result);
+// Stampo il risultato in pagina
+const numbers = document.getElementById('list-items');
+numbers.innerHTML = `<li> ${result} </li> `;
