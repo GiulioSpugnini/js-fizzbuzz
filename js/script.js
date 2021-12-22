@@ -16,13 +16,13 @@ const numbers = document.getElementById('list-items');
 for (let i = 1; i <= 100; i++) {
 
     if (i % 15 === 0) { // Numeri multipli di 3 e di 5
-        result += '<li> FizzBuzz </li>';
+        result += '<li class="col-12 text-primary fs-3"> FizzBuzz </li>';
     } else if (i % 3 === 0) { // Numeri multipli solo di 3
-        result += '<li> Fizz </li>';
+        result += '<li class="col-12 text-warning fs-3"> Fizz </li>';
     } else if (i % 5 === 0) { // Numeeri multipli solo di 5
-        result += '<li> Buzz </li>';
+        result += '<li class="col-12 text-success fs-3"> Buzz </li>';
     } else {
-        result += `<li> ${i} </li>`;
+        result += `<li class="col-12 text-light fs-3"> ${i} </li>`;
     }
     // Stampo il risultato in pagina\
 }

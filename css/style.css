@@ -1,0 +1,25 @@
+main {
+    background-color: steelblue;
+    height: 100vh;
+}
+
+#list-items {
+    list-style: none;
+    background-color: royalblue;
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px solid teal;
+    column-count: 6;
+}
+
+#list-items li {
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: rgba(64, 224, 208, 0.8);
+}
+
+#list-items li:hover {
+    animation: 1s ease;
+    transform: scaleX(1.1);
+    cursor: pointer;
+}
